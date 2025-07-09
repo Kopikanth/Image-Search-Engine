@@ -4,3 +4,62 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: rgb(86, 23, 145);
+    color: white;
+    padding-top: 120px;
+}
+
+.input-field{
+    margin-top: 40px;
+    border-radius: 20px;
+    height: 70px;
+    width: 550px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.input-box{
+    color: white;
+    background-color: rgba(66, 110, 151, 0.555);
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+}
+
+#search{
+    width: 30%;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: rgb(230, 73, 0);
+    color: white;
+    font-size: 17px;
+}
+
+.input-box::placeholder{
+    color: white;
+    font-size: 17px;
+}
+
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 200px);
+    gap: 30px;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
